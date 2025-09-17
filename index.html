@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Andrew Watson">
+        <title>CARES Winlink Net Week 151 checkins</title>
+
+        <style>
+            body {
+                /* font-family: Roboto, Helvetica, Arial, sans-serif; */
+                font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-size: 1rem;
+                font-weight:400;
+                color: #1a1a1a;
+                background-image: none;
+                background: #e8e8e8;
+
+                /* auto margins centre this container within its parent */
+
+                /* border: thin solid red; */
+                margin-left: auto;
+                margin-right: auto;
+                width: 85%;
+                margin-top: 20px;
+                padding-left: 40px;
+                padding-right: 40px;
+                padding-bottom: 40px;
+            }
+
+            h1, h2 {
+                color: rgb(60, 60, 60);
+                font-weight: bold;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+                margin-top: 20px;
+                margin-bottom: 5px;
+            }
+
+            div.auxc-checkin {
+                background-color: #F0F0F0;
+                border: thin solid darkgrey;
+                border-radius: 10px;
+                padding-left: 5%;
+                padding-right: 5%;
+                /* padding-bottom: 40px; */
+                margin-top: 20px;
+                overflow: hidden;
+            }
+
+            div.exercise-requirements {
+                /* background-color: lightgrey; */
+                border: thin solid darkgrey;
+                border-radius: 10px;
+                padding-right: 5%;
+                margin-top: 20px;
+                font-size: 1rem;
+            }
+            
+            div.exercise-requirements li {
+                font-size: 1rem;
+                margin-bottom: 0.5rem;
+            }
+
+            .checkin-sentence {
+                font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+                /* font-family: Roboto, Helvetica, Arial, sans-serif; */
+                /* font-family: Courier New, monospace; */
+                color: darkgreen;
+                font-size: 18px;
+                font-weight: bold;
+                text-align: left;
+                text-transform: uppercase;
+            }
+
+            .utility_thumbnail {
+                border-style:none;
+                float:right;
+                padding-left: 50px;
+                /* padding-right: 20px; */
+                padding-top: 0px;
+                padding-bottom: 20px; 
+            }
+
+            .utility_thumbnail:hover {
+                transform: scale(1.1);
+            }
+            
+            #jump-to-AUXC-block {
+                display: flex;
+                align-items: center; 
+            }
+
+            #AUXC-jump-paragraph {
+                display: inline-block;
+                margin-right: 20px;
+            }
+
+            #AUXC-select-list {
+                display: inline-block;
+            }
+        </style>
+
+        <script>
+            function jumpToAUXC() {
+                const selectElement = document.getElementById("AUXC-select-list");
+                const selectedValue = selectElement.value;
+
+                if(selectedValue) { // Only jump if a valid option is selected
+                    window.location.hash = selectedValue;
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1>CARES Winlink Net: Week 151 exercise</h1>
+
+        <p>Your teammates' exercise material is below. I've provided their site /
+            utility equipment description. Each AUXC should have at least one thumbnail.
+            Click on the thumbnail to see the original image.</p>
+        
+        <p>Use the browser's back button to return to this page from the full-sized
+            image.</p>
+
+        <p> Your exercise requirements this week were to:</p>
+        <div class="exercise-requirements">
+            <ul>
+                <li>
+                    Placeholder 1
+                </li>
+                <li>
+                   Placeholder 2
+                </li>
+                <li>
+                    Placeholder 3
+                </li>
+            </ul>
+        </div>
+
+        <h2>Individual AUXCs' utility equipment descriptions and images</h2>
+        <p>Note that if an AUXC checked in through multiple RMSs, then each check-in
+            sentence is provided at the top of their information.</p>
+        <div id="jump-to-AUXC-block">
+            <p id="AUXC-jump-paragraph">Jump to a specific AUXC's check-in material:</p>
+
+            <select id=AUXC-select-list onchange="jumpToAUXC()">
+                <!-- <option value="">Select an AUXC</option>
+                <option value="AUXC_K7QQB">K7QQB</option>
+                <option value="AUXC_KC7TAK">KC7TAK</option>
+                <option value="AUXC_KD7DNM">KD7DNM</option>
+                <option value="AUXC_KE7WNB">KE7WNB</option>
+                <option value="AUXC_KF7KXX">KF7KXX</option>
+                <option value="AUXC_KI7BDP">KI7BDP</option>
+                <option value="AUXC_KI7DGC">KI7DGC</option>
+                <option value="AUXC_KI7FCG">KI7FCG</option>
+                <option value="AUXC_KI7LAG">KI7LAG</option>
+                <option value="AUXC_KI7MDE">KI7MDE</option>
+                <option value="AUXC_KI7O">KI7O</option>
+                <option value="AUXC_KJ7JCR">KJ7JCR</option>
+                <option value="AUXC_KK6OTP">KK6OTP</option>
+                <option value="AUXC_KK7MLS">KK7MLS</option>
+                <option value="AUXC_KK7ZTC">KK7ZTC</option> -->
+                <option value="AUXC_N1ACW">N1ACW</option>
+                <!-- <option value="AUXC_W6RKT">W6RKT</option>
+                <option value="AUXC_W7CRI">W7CRI</option>
+                <option value="AUXC_W7TEE">W7TEE</option>
+                <option value="AUXC_WA6ZLV">WA6ZLV</option> -->
+            </select>
+        </div>
+<!-- AUXC information template
+        <div class="auxc-checkin" id="AUXC_">
+            <p class="checkin-sentence">
+                150, N1ACW, VARA FM, N1ACW-10, 145.530, Lake Oswego, Clackamas, Oregon
+            </p>
+            <a href="./week_150_images/N1ACW.jpg">
+                <img class="utility_thumbnail" src="./week_150_images/N1ACW_thumb.jpg" style="height:100px; width:102px">
+            </a>
+            <p>
+                Placeholder
+            </p>
+            <p>
+                 Lat/Long (<a href="https://maps.google.com/?q=45.4034,-122.6872" target="_blank"
+                    rel="noopener noreferrer">45.4034, -122.6872</a>
+            </p>
+            <p>
+                Placeholder
+            </p>
+            <p>
+                Placeholder
+            </p>
+            <p><em>Original image size: H x W pixels, 0.0 kbytes</em></p>
+        </div>        
+-->        
+        <div class="auxc-checkin" id="AUXC_N1ACW">
+            <p class="checkin-sentence">
+                150, N1ACW, VARA FM, N1ACW-10, 145.530, Lake Oswego, Clackamas, Oregon
+            </p>
+            <a href="./week_150_images/N1ACW.jpg">
+                <img class="utility_thumbnail" src="./week_150_images/N1ACW_thumb.jpg" style="height:100px; width:102px">
+            </a>
+            <p>
+                Attached is an image of a fibre network distribution box, approximately
+                600mm wide, 700 mm high and 400 mm deep.
+            </p>
+            <p>
+                The image was taken facing north west from the centreline of Greentree
+                Road 25m north east of the intersection of Greentree Road and Sunnyhill
+                drive. Lat/Long (<a href="https://maps.google.com/?q=45.4034,-122.6872" target="_blank"
+                    rel="noopener noreferrer">45.4034, -122.6872</a>).
+            </p>
+            <p>
+                The distribution box is Located approximately 3m above ground and
+                attached to a newer utility pole on the north side of Greentree Road.
+                The utility pole also has a street light 6m above the ground. The
+                utility pole is numbered: PGE D21 16A 605.
+            </p>
+            <p>
+                The box has an illuminated green light on its north western face (right
+                side in the image).
+            </p>
+            <p><em>Original image size: 648 x 635 pixels, 96 dpi, 97.7 kbytes</em></p>
+        </div>
+    </body>
+</html>
+    
