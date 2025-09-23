@@ -44,6 +44,11 @@
                 margin-bottom: 5px;
             }
 
+            textarea {
+                font-size: 90%;
+                font-family: 'Courier New', Courier, monospace;
+            }
+
             div.auxc-checkin {
                 background-color: #F0F0F0;
                 border: thin solid darkgrey;
@@ -142,7 +147,10 @@
 
         <p>Your teammates' exercise material is below. You should see their CERT
         Form #1. Each AUXC who submitted an image should have at least one
-        thumbnail. Click on the thumbnail to see the original image.</p>
+        thumbnail. Click on the thumbnail to see the original image. All other
+        check-ins have been recorded, so if you do not see your check-in
+        sentence - rest assured: I have it and it has been added to the roster
+        list for week 151.</p>
         
         <p>Use the browser's back button to return to this page from the full-sized
             image.</p>
@@ -151,21 +159,29 @@
         across the submitted images</strong>: check out my explanation in my <a
         href="#AUXC_N1ACW">check-in below.</a></p>
 
-        <p>Those of you who used the non-standard Winlink CERT form 1 - I have
-        included your form content as rendered in a Winlink Express plain text
-        message. I appreciate that you took the time to find this form, but be
-        aware of two important things:</p>
+        <p>Those of you who used the non-standard Winlink CERT form 1. I
+        appreciate that you took the time to find this form. One of the benefits
+        is that the content is much smaller than an image.</p>
+        
+        <p>I have included your form content <em>exactly</em> as rendered in the
+        Winlink Express plain text message as I received it. All forms were
+        version 0.1.2. Why one had lost the tab spacing en route, is a mystery
+        to me and may be worth looking into.</p>
+        
+        <p>There are a couple of caveats using these forms though:</p>
         <ul>
             <li>Not everyone will have this form installed by default as it is
             not part of the standard Winlink forms set. I don't have any of the
             non-standard forms installed (I'm not even sure where they come from
             and who created them - I'll find out when I return from the field.)
+            We can decide whether or not to make this a standard install for
+            CARES AUXCs after testing and review.
             </li>
             <li>Transcription is error prone. Especially from a handwritten form
-            scribbled in the field by volunteers. ICS forms are likely created
-            in an EOC or command post by professional, trained staff. We should
-            be able to chase them down if we can't read the message
-            content.</li>
+            scribbled in the field by volunteers working in less than ideal
+            conditions. ICS forms are likely created in an EOC or command post
+            by professional, trained staff. We should be able to chase them down
+            if we can't read the message content.</li>
         </ul>
 
         <p> Your exercise requirements this week were to:</p>
@@ -186,7 +202,7 @@
         </div>
 
 
-        <h2>Individual AUXCs' utility equipment descriptions and images</h2>
+        <h2>Individual AUXCs' CERT form #1 images and/or content</h2>
         <p>Note that if an AUXC checked in through multiple RMSs, then each check-in
             sentence is provided at the top of their information.</p>
         <div id="jump-to-AUXC-block">
@@ -214,8 +230,8 @@
                 <option value="AUXC_KK7ZTC">KK7ZTC</option>
                 <option value="AUXC_N1ACW">N1ACW</option>
                 <option value="AUXC_W6RKT">W6RKT</option>
-                <!-- <option value="AUXC_W7CRI">W7CRI</option>
-                <option value="AUXC_W7TEE">W7TEE</option>  -->
+                <!-- <option value="AUXC_W7CRI">W7CRI</option> -->
+                <option value="AUXC_W7TEE">W7TEE</option>
                 <option value="AUXC_WA6ZLV">WA6ZLV</option>
             </select>
         </div>
@@ -246,7 +262,7 @@
                 151, KD7ISA, Telnet, 0.000, Hillsboro, Washington, Oregon
             </p>
             
-            <pre>
+            <textarea readonly cols="100" rows="25" wrap="off">
 CERT Damage Assessment
 CERT: Lake Oswego
 DATE: 2025-9-15
@@ -264,7 +280,7 @@ OBSERVATIONS: 151, KD7ISA, Telnet, internet, 0.000, Hillsboro, Washington, Orego
 * Structures damaged = 17 (WLE form will only take 1 digit). Burning houses at 999 Hoffer Court, 107A Greentree RD, 207 Livinggood Lane.
 Gas leak at Greentree Pool, NW Natural arrived on scene at 2315. Electric arcing from in-ground transformer at/near 371 Woodland Terrace. 17 damaged structures on high ground / Northwest slope from Crestview down to South Shore Blvd (Heavy:9, Light:8) 2 properties (family homes) at Wall St and Crestview collapsed by fallen trees. All injuries are Green. Treatment Centre: Palisades School. One Nurse-Practioneron site. Need sterile dressings and PPE.
 CERT MEMBER: G. Greene
-            </pre>
+            </textarea>
 
 
         </div>
@@ -407,7 +423,7 @@ CERT MEMBER: G. Greene
             <p class="checkin-sentence">
                 151, KK7MLS, VARA FM, K7CPU-10, 441.075, LAKE OSWEGO, CLACKAMAS, OREGON
             </p>
-            <pre>
+            <textarea readonly cols="100" rows="25" wrap="off">
 CERT Damage Assessment
 CERT: Oak Creek Neighborhood, LO
 DATE: 2025-9-22 17:56
@@ -435,7 +451,7 @@ ANIMALS: No injuries noted.  However, it appears that there is a greater number 
 *** THIS IS AN EXERCISE ***
 CERT MEMBER: G. Greene
 
-            </pre>
+            </textarea>
 
         </div>
 
@@ -445,7 +461,7 @@ CERT MEMBER: G. Greene
             </p>
             <p><strong>(Check-in sentence not submitted. The above was pieced together from CMS traffic)</strong></p>
 
-            <pre>
+            <textarea readonly cols="100" rows="25" wrap="off">
 CERT Damage Assessment
 CERT: LAKE OSWEGO
 DATE: 2025-09-22
@@ -467,7 +483,7 @@ NO ACCESS: FLOODED INTERSECTION AT LONGFELLOW AVE AND CHILDS ROAD - IMPASSABLE
 COMM NOTES: ALL REGULAR PHONE/CELL/INTERNET IN THIS AREA IS DOWN, CERT IS USING HT'S AND RUNNERS, ALL DANGER AREAS MARKED WITH TAPE AND SIGNAGE PER CERT GUIDELINES.
 CERT MEMBER: G. GREENE
 
-            </pre>
+        </textarea>
         </div>
 
         <div class="auxc-checkin" id="AUXC_KC7TAK">
@@ -479,6 +495,17 @@ CERT MEMBER: G. GREENE
             </a>
 
             <p><em>Original image size: 800 x 600 pixels, 96 dpi, 68.1 kbytes</em></p>
+        </div>
+
+        <div class="auxc-checkin" id="AUXC_W7TEE">
+            <p class="checkin-sentence">
+                151, W7TEE, VARA FM, K7MCE-10, 145.070, Clarkes, Clackamas, Oregon
+            </p>
+            <a href="./images/W7TEE.jpg">
+                <img class="utility_thumbnail" src="./images/W7TEE_thumb.jpg" style="height: 300px; width: px">
+            </a>
+
+            <p><em>Original image size: 657 x 493 pixels, 96 dpi, 48.6 kbytes</em></p>
         </div>
 
         <!-- AUXC information template
@@ -501,25 +528,49 @@ CERT MEMBER: G. GREENE
             <p class="checkin-sentence">
                 151, N1ACW/M, VARA FM, KC7DMF, 144.940, Deschutes NF, Deschutes, Oregon
             </p>
+            <p class="checkin-sentence">
+                151, N1ACW/M, Packet, W7HWY-10, 145.030, Deschutes NF, Deschutes, Oregon
+            </p>
             <a href="./images/N1ACW.jpg">
                 <img class="acw_example0" src="./images/N1ACW_thumb.jpg" style="height:388px; width:300px">
             </a>
-            <p>
-                I scanned the completed CERT Form #1 (click on the image to the
-                right to see the full-sized form) since I knew that this would
-                present the document square to the image capturing device.
-                Scanners typically have a white point that is similar to scanner
-                paper is another plus. Squaring the image for a camera is
-                really, really hard! (especially without getting a shadow of
-                yourself over the image.)</p>
 
-            <p> Digital cameras, including the one built-into your cell phone,
-            don't work like the scanner. Cameras pretend that an image is
-            greyscale and they are designed to assume that the average of each
-            pixels' value is a neutral tone This is chosen to be a specific
-            shade of grey (there's more than fifty, BTW) and is known as middle
-            grey or 18% greycard. You could blame Ansel Adams and his Zone
-            system for this but the truth is - cameras are really dumb!</p>
+            <p>
+                Many of you used a camera or cellphone for capturing your
+                forms. This is a good solution. You've probably discovered
+                that squaring the image for a camera is really, really hard!
+                Especially without getting a shadow of yourself over the
+                image. Using what you have at hand - like your phone - is
+                absolutely the correct thing to do - providing you know how
+                to download images from the device! Phone users: keep the
+                correct cable in your kit so you can mount your device as a
+                drive.
+            </p>
+            <p>
+                I took a different approach and I scanned the completed CERT
+                Form #1 (click on the image to the right to see the full-sized
+                form). I did this because I knew that I'm bad at capturing
+                documents with a camera plus I had a scanner at hand. Scanning
+                presents the document square to the image capturing device.
+                Scanners typically have a white point that is similar to regular
+                printer paper and they are usually capture a sharp image. For me
+                this is another plus because I don't have to worry about camera
+                settings nor holding it still enough.
+            </p>
+
+            <p> 
+                White point? What's that? Digital cameras, including the one
+                built-into your cell phone, don't work like the scanner. Let me
+                give you a hand-wavy explanation.
+            </p>
+            <p>
+                Cameras pretend that an image is greyscale and they are designed
+                to assume that the average of each pixels' value is a neutral
+                tone This is chosen to be a specific shade of grey (there's more
+                than fifty, BTW) and is known as middle grey or 18% greycard.
+                You could blame Ansel Adams and his Zone system for this but the
+                truth is - cameras are really dumb!
+            </p>
 
             <a href="./images/N1ACW_average_image.jpg   ">
                 <img class="acw_example1" src="./images/N1ACW_average_image_thumb.jpg" style="height:300px; width:225px">
