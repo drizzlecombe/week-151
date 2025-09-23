@@ -88,8 +88,16 @@
                 padding-top: 0px;
                 padding-bottom: 20px; 
             }
+            .utility_thumbnail_right, .acw_example0 {
+                border-style:none;
+                float:right;
+                padding-left: 20px;
+                padding-right: 0px;
+                padding-top: 0px;
+                padding-bottom: 20px; 
+            }
 
-            .utility_thumbnail:hover {
+            .utility_thumbnail:hover, .utility_thumbnail_right,.acw_example0:hover, .acw_example1:hover {
                 transform: scale(1.05);
             }
 
@@ -99,13 +107,9 @@
                 padding-left: 0px;
                 padding-right: 20px;
                 padding-top: 0px;
-                padding-bottom: 0px; 
+                padding-bottom: 20px; 
             }
 
-            .acw_example1:hover {
-                transform: scale(1.05);
-            }
-            
             #jump-to-AUXC-block {
                 display: flex;
                 align-items: center; 
@@ -181,9 +185,9 @@
                 <option value="AUXC_KI7FCG">KI7FCG</option>
                 <!-- <option value="AUXC_KI7LAG">KI7LAG</option>
                 <option value="AUXC_KI7MDE">KI7MDE</option>
-                <option value="AUXC_KI7O">KI7O</option>
+                <option value="AUXC_KI7O">KI7O</option> -->
                 <option value="AUXC_KJ7JCR">KJ7JCR</option>
-                <option value="AUXC_KK6OTP">KK6OTP</option>
+                <!-- <option value="AUXC_KK6OTP">KK6OTP</option>
                 <option value="AUXC_KK7MLS">KK7MLS</option>
                 <option value="AUXC_KK7ZTC">KK7ZTC</option> -->
                 <option value="AUXC_N1ACW">N1ACW</option>
@@ -270,6 +274,17 @@
             <p><em>Original image size: 640 x 448 pixels, 96 dpi, 46.3 kbytes</em></p>
         </div>
 
+        <div class="auxc-checkin" id="AUXC_KJ7JCR">
+            <p class="checkin-sentence">
+                151, KJ7JCR, VARA FM, W7BVT-10, 145.020, Lake Oswego, Clackamas, Oregon
+            </p>
+            <a href="./images/KJ7JCR.jpg">
+                <img class="utility_thumbnail" src="./images/KJ7JCR_thumb.jpg" style="height: 300px; width: 225px">
+            </a>
+
+            <p><em>Original image size: 798 x 598 pixels, dpi, 68.3 kbytes</em></p>
+        </div>
+
         <!-- AUXC information template
         <div class="auxc-checkin" id="AUXC_CALLSIGN">
             <p class="checkin-sentence">
@@ -287,26 +302,34 @@
             <p class="checkin-sentence">
                 151, N1ACW, VARA FM, K7LSC-10, 144.960, Lake Oswego, Clackamas, Oregon
             </p>
+            <p class="checkin-sentence">
+                151, N1ACW/M, VARA FM, KC7DMF, 144.940, Deschutes NF, Deschutes, Oregon
+            </p>
             <a href="./images/N1ACW.jpg">
-                <img class="utility_thumbnail" src="./images/N1ACW_thumb.jpg" style="height:388px; width:300px">
+                <img class="acw_example0" src="./images/N1ACW_thumb.jpg" style="height:388px; width:300px">
             </a>
             <p>
-                I scanned the completed CERT Form #1 since I knew that this
-                would present the document square to the image capturing device.
+                I scanned the completed CERT Form #1 (click on the image to the
+                right to see the full-sized form) since I knew that this would
+                present the document square to the image capturing device.
                 Scanners typically have a white point that is similar to scanner
                 paper is another plus. Squaring the image for a camera is
                 really, really hard! (especially without getting a shadow of
                 yourself over the image.)</p>
-            <a href="./images/N1ACW_average_image.jpg   ">
-                <img class="acw_example1" src="./images/N1ACW_average_image_thumb.jpg" style="height:300px; width:225px">
-            </a>
+
             <p> Digital cameras, including the one built-into your cell phone,
             don't work like the scanner. Cameras pretend that an image is
             greyscale and they are designed to assume that the average of each
-            pixels' value is neutral nown as middle grey or 18% greycard - you
-            could blame Ansel Adams for this but the truth is - cameras are
-            really dumb!</p>
-            <p>AThis assumption is good for most images - like urban or country
+            pixels' value is a neutral tone This is chosen to be a specific
+            shade of grey (there's more than fifty, BTW) and is known as middle
+            grey or 18% greycard. You could blame Ansel Adams and his Zone
+            system for this but the truth is - cameras are really dumb!</p>
+
+            <a href="./images/N1ACW_average_image.jpg   ">
+                <img class="acw_example1" src="./images/N1ACW_average_image_thumb.jpg" style="height:300px; width:225px">
+            </a>
+
+            <p>This assumption is good for most images - like urban or country
             landscapes and even this image of my Mountain Lakes 100 station.
             What happens when the subject is mostly white, like a form on white
             paper . Remember that the camera assumes that an image's greyscale
